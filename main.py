@@ -86,7 +86,7 @@ def main():
     words_list = process_text_file(filename)
     
     # Run students' words_in function
-    num_buckets, collisions = Hash.words_in(words_list)
+    num_buckets, collisions = new.words_in(words_list)
     print(f"Number of Buckets Used: {num_buckets}")
     print(f"Collisions: {collisions}")
 
@@ -96,7 +96,7 @@ def main():
     # Run students' lookup_word_count function and track lookup score
     total_lookups = 0
     for word in unique_words:
-        _, lookups = Hash.lookup_word_count(word)
+        _, lookups = new.lookup_word_count(word)
         total_lookups += lookups
 
     # Calculate final score
