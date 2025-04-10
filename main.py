@@ -90,7 +90,10 @@ def main():
     else:
          new = Hash(7000)
     # Run students' words_in function
-    num_buckets, collisions = new.words_in(words_list)
+    # num_buckets, collisions = 
+    new.words_in(words_list)
+    num_buckets = new.buc
+    collisions = new.col
     print(f"Number of Buckets Used: {num_buckets}")
     print(f"Collisions: {collisions}")
 
