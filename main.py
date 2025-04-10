@@ -85,8 +85,10 @@ def main():
     filename = input(Alice.txt)  # Change this to your text file name
     words_list = process_text_file(filename)
     x = len(words_list)
-    new = Hash(x/3*2)
-    
+    if (x < 7000):
+        new = Hash(x/3*2)
+    else:
+         new = Hash(7000)
     # Run students' words_in function
     num_buckets, collisions = new.words_in(words_list)
     print(f"Number of Buckets Used: {num_buckets}")
