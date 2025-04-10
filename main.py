@@ -81,9 +81,11 @@ def process_text_file(filename):
 # Main function to run the simulation
 def main():
     # Read and process the input file
-    new = Hash(1200)
+    
     filename = input(Alice.txt)  # Change this to your text file name
     words_list = process_text_file(filename)
+    x = len(words_list)
+    new = Hash(x/3*2)
     
     # Run students' words_in function
     num_buckets, collisions = new.words_in(words_list)
