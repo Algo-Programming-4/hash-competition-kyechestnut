@@ -86,9 +86,10 @@ def main():
     words_list = process_text_file(filename)
     x = len(words_list)
     if (x < 7000):
-        new = Hash(x/3*2.8)
+        new = Hash(x/3*2)
     else:
          new = Hash(7000)
+        
     # Run students' words_in function
     # num_buckets, collisions = 
     new.words_in(words_list)
