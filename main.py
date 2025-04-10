@@ -81,7 +81,7 @@ def process_text_file(filename):
 # Main function to run the simulation
 def main():
     # Read and process the input file
-    new = Hash(500)
+    new = Hash(1200)
     filename = input(Alice.txt)  # Change this to your text file name
     words_list = process_text_file(filename)
     
